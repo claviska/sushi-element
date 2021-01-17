@@ -160,7 +160,11 @@ render() {
 
 To listen to events, use `addEventListener()` as you normally would.
 
-## TODO
+## Developers
+
+- Use `npm start` to build + watch
+- Use `npm build` to build
+- Use `npm run sandbox` to build + watch + launch a dev server that points to the examples directory
 
 This is still somewhat experimental and there's still some work to do with it.
 
