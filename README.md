@@ -51,6 +51,8 @@ To use the counter in your HTML:
 
 View this example in [CodePen](https://codepen.io/claviska/pen/vYXbGJv?editors=1010) or [JSFiddle](https://jsfiddle.net/claviska/u5p1aer7/).
 
+For a more advanced example that uses more features, refer to `examples/button/button.js` or try it out on [CodePen](https://codepen.io/claviska/pen/qBagZpK?editors=1010) or [JSFiddle](https://jsfiddle.net/claviska/6h4o798b/).
+
 ## A note about "props" and state
 
 In Sushi element, the term "props" refers to a form of state that the user controls by setting HTML attributes or JavaScript properties on the element. The term "state" refers to the element's internal state which the user has no control over. Changes to either will cause the element to re-render.
