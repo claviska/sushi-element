@@ -1,7 +1,7 @@
 {
   "name": "sushi-element",
   "description": "An expressive way to create web components.",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "homepage": "https://github.com/claviska/sushi-element",
   "author": "Cory LaViska",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "build": "npm run clean && rollup --config",
     "clean": "rm -rf ./dist",
     "sandbox": "concurrently --kill-others \"npm run start\" \"http-server -o /examples\"",
-    "version": "npm run build"
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "lit-html": "^1.3.0"
