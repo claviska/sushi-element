@@ -18,14 +18,13 @@ export function createElement(config) {
   );
 
   return class extends HTMLElement {
-    props = {};
-    state = {};
-    stylesheet = `<style>${config.styles}</style>`;
-    isRenderScheduled = false;
-    isWatching = false;
-
     constructor() {
       super();
+      this.props = {};
+      this.state = {};
+      this.stylesheet = `<style>${config.styles}</style>`;
+      this.isRenderScheduled = false;
+      this.isWatching = false;
 
       if (config.shadow) {
         this.attachShadow({ mode: 'open' });
