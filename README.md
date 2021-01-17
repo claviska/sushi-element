@@ -1,4 +1,4 @@
-# Sushi Element
+# Sushi Element 🍣
 
 Sushi Element offers an expressive way to create standards-based [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) that work with (and without) your favorite framework. Notable features include:
 
