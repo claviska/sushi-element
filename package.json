@@ -29,7 +29,7 @@
     "start": "npm run clean && rollup --config --watch",
     "build": "npm run clean && rollup --config",
     "clean": "rm -rf ./dist",
-    "sandbox": "concurrently --kill-others \"npm run start\" \"http-server -o /sandbox\"",
+    "sandbox": "concurrently --kill-others \"npm run start\" \"http-server -o /examples\"",
     "version": "npm run build"
   },
   "dependencies": {
