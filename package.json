@@ -1,11 +1,12 @@
 {
   "name": "sushi-element",
   "description": "An expressive way to create web components.",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "homepage": "https://github.com/claviska/sushi-element",
   "author": "Cory LaViska",
   "license": "MIT",
   "main": "dist/index.js",
+  "type": "module",
   "files": [
     "dist"
   ],
