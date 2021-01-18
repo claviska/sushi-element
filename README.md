@@ -55,13 +55,13 @@ For a more advanced example that uses more features, refer to `examples/button/b
 
 ## A note about "props" and state
 
-In Sushi element, the term "props" refers to a form of state that the user controls by setting HTML attributes or JavaScript properties on the element. The term "state" refers to the element's internal state which the user has no control over. Changes to either will cause the element to re-render.
+In Sushi Element, the term "prop" refers to a form of state that the user controls by setting HTML attributes or JavaScript properties on the element. The term "state" refers to the element's internal state which the user has no control over. Changes to either will cause the element to re-render.
 
 The concept of [attributes and properties](https://stackoverflow.com/a/6004028/567486) can be confusing, so Sushi Element abstracts them into "props." Internally, Sushi Element only looks at properties, but it will automatically sync attribute changes to their corresponding properties for better DX. This means that the color attribute in `<my-element color="blue">` will translate to `this.color = 'blue'` on the element instance and, if the attribute changes, `this.color` will update to match.
 
 By default, property changes _will not_ reflect back to attributes. Thus, setting `this.color = 'tomato'` will update the property but not the attribute nor the DOM. You can modify this behavior by adding the `reflect` option to any prop, which will make `this.color = 'tomato'` reflect the attribute and result in `<my-element color="tomato">`. This can be useful if you intend to style your element with [attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors).
 
-Attributes are always lower-snake-case and properties are always camelCase. For example, an attribute named `primary-color` will have a corresponding property of `primaryColor`. Sushi Element handles this conversion for you automatically.
+Attributes are always lower-kebab-case and properties are always camelCase. For example, an attribute named `primary-color` will have a corresponding property of `primaryColor`. Sushi Element handles this conversion for you automatically.
 
 ## API
 
