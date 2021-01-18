@@ -116,12 +116,10 @@ export function createElement(config) {
       }
 
       customElements.define(this.tagName, this);
-
-      return this.tagName;
     }
 
-    // Sync attributes to properties as they change
     attributeChangedCallback(attrName, oldValue, newValue) {
+      // Sync attributes to properties as they change
       if (newValue !== oldValue) {
         this.updatePropertyFromAttribute(attrName);
         this.scheduleRender();
