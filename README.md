@@ -184,6 +184,6 @@ This is still somewhat experimental and there's still some work to do with it.
 
 ## What relevance does the word "sushi" have to this project?
 
-Probably none. I just needed a quick name to start hacking on it. But in hindsight, the concept of sushi seems to parallel many aspects of component-driven development. Just like apps, sushi is comprised of many smaller components (nori, fish, roe, wasabi) and can range from very simple (sashimi) to very complex (uramaki).
+Probably none. I just needed a quick name to start hacking on it. But in hindsight, the concept of sushi seems to parallel many aspects of component-driven development. Just like apps, sushi is comprised of many smaller components (nori, rice, fish, roe, wasabi) and can range from very simple (sashimi) to very complex (uramaki).
 
 And, just like sushi, I don't expect that everyone will enjoy this library, but I do hope they at least try it and see how simple crafting lightweight, standards-based web components can be!
