@@ -34,10 +34,7 @@ export const Counter = createElement({
   },
   render() {
     return html`
-      <button
-        type="button" 
-        @click="${() => this.count++}"
-      >
+      <button type="button" @click="${() => this.count++}">
         Count: ${this.count}
       </button>
     `;
