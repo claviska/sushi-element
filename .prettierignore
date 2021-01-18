@@ -1,3 +1,4 @@
+*.md
 .github
 lib
 node_modules
