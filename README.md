@@ -33,7 +33,14 @@ export const Counter = createElement({
     count: 0
   },
   render() {
-    return html` <button type="button" @click="${() => this.count++}">Count: ${this.count}</button> `;
+    return html`
+      <button
+        type="button" 
+        @click="${() => this.count++}"
+      >
+        Count: ${this.count}
+      </button>
+    `;
   }
 });
 ```
