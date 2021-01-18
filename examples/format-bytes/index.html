@@ -1,0 +1,18 @@
+<script type="module">
+  import { FormatBytes } from './format-bytes.js';
+  FormatBytes.register();
+</script>
+
+<label>
+  Bytes
+  <input type="number" value="1000"></input>
+</label>
+
+<my-format-bytes value="1000"></my-format-bytes>
+
+<script>
+  // Update formatter when input changes
+  const input = document.querySelector('input');
+  const formatter = document.querySelector('my-format-bytes');
+  input.addEventListener('input', () => formatter.value = input.value);
+</script>
