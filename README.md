@@ -94,9 +94,12 @@ Creates a custom element. The `config` argument can contain the following proper
 
 _All lifecycle methods and custom methods are called in the context of the host element, so `this` will refer to the element's instance._
 
-The resulting custom element will have the following properties and methods:
+The resulting custom element will have a static `register()` method that you can use to register the custom element. This is the same as calling `customElements.define()`, but it can be chained for convenience.
 
-- `register()` - Registers the element with the custom elements registry. Returns the element's tag name.
+```js
+// Shortcut for creating + registering
+createElement({ ... }).register();
+```
 
 ### `prop(options)`
 
@@ -119,7 +122,7 @@ const el = createElement({
       value: 'tomato',
       reflect: true,
       watch: (oldValue, newValue) => console.log(`color changed from ${oldValue} to ${newValue}`)
-    }),
+    })
   }
 })
 ```
@@ -152,7 +155,7 @@ For convenience, Sushi Element exports lit-html's `classMap`, `live`, `nothing`,
 
 ## Events
 
-Each element will have an `emit()` method that lets you fire off [custom events](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) easily. The first argument is the event name and an optional second argument lets you provide details and additional options for the event (e.g. `composed`, `bubbles`, etc.)
+Each element will have an `emit()` method that lets you dispatch [custom events](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) easily. The first argument is the event name and an optional second argument lets you provide details and additional options for the event (e.g. `composed`, `bubbles`, etc.)
 
 Here's an example of how you can use it:
 
