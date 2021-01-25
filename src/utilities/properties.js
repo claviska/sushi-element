@@ -12,3 +12,7 @@ export function getPropertyValue(attrValue) {
     return attrValue;
   }
 }
+
+export function getReservedProperties() {
+  return ['id', 'class'].concat(Object.keys(HTMLElement.prototype));
+}

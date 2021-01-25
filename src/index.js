@@ -1,8 +1,10 @@
 import { html as createTemplate, render, TemplateResult } from 'lit-html';
 import { getAttributeName, getAttributeValue } from './utilities/attributes.js';
-import { getPropertyName, getPropertyValue } from './utilities/properties.js';
+import { getPropertyName, getPropertyValue, getReservedProperties } from './utilities/properties.js';
 import { html } from './utilities/html.js';
 import { Prop, prop } from './utilities/prop.js';
+
+const reservedProps = getReservedProperties();
 
 export function createElement(config) {
   config = Object.assign(
@@ -38,6 +40,10 @@ export function createElement(config) {
 
       // Define props and add custom setters
       Object.keys(config.props).map(propName => {
+        if (reservedProps.includes(propName)) {
+          throw new Error(`Invalid prop name: "${getAttributeName(propName)}" is a global HTML attribute`);
+        }
+
         if (this.hasOwnProperty(propName)) {
           throw new Error(`Invalid prop name: "${propName}" has already been declared`);
         }
