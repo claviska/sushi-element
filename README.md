@@ -1,3 +1,11 @@
+**⚠️ THIS PROJECT HAS BEEN ARCHIVED!**
+
+I've released its successor, named [Shoemaker](https://github.com/shoelace-style/shoemaker), as part of the open source suite that's used to build [Shoelace.style](https://shoelace.style/).
+
+You can find the new repo here: [github.com/shoelace-style/shoemaker](https://github.com/shoelace-style/shoemaker)
+
+---
+
 # Sushi Element 🍣
 
 Sushi Element offers an expressive way to create standards-based [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) that work with (and without) your favorite framework. Notable features include:
